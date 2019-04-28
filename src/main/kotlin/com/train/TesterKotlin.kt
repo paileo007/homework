@@ -16,14 +16,14 @@ fun main(args: Array<String>) {
 }
 
 
-class TricketKotlin(var totaltrikets:Int,var roundtrip:Int){
-    var onewaytriketsprice=1000;
+class TricketKotlin(var totaltikets:Int,var roundtrip:Int){
+    var onewaytiketsprice=1000;
     var roundtipprice=2000;
     var discount=9;
-    var total=(totaltrikets-roundtrip)*onewaytriketsprice+roundtrip*roundtipprice*discount/10
+    var total=(totaltikets-roundtrip)*onewaytiketsprice+roundtrip*roundtipprice*discount/10
 
     fun print(){
-        println("Total tickets:"+totaltrikets);
+        println("Total tickets:"+totaltikets);
         println("Round-trip:"+roundtrip);
         println("Total:"+total);
     }
