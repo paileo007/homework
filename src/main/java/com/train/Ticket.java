@@ -1,22 +1,21 @@
 package com.train;
 
 public class Ticket {
-    int totaltrikets,roundtip,total;
-    int totaltriketsprice=1000;
+    int totaltrikets,roundtrip,total;
+    int onewaytriketsprice=1000;
+    int roundtripprice=2000;
     int discount=9;
-    int roundtipprice=2000;
 
-    public Ticket(int totaltrikets,int roundtip){
+    public Ticket(int totaltrikets,int roundtrip){
         this.totaltrikets=totaltrikets;
-        this.roundtip=roundtip;
-        this.total=(totaltrikets-roundtip)*totaltriketsprice+roundtip*roundtipprice*discount/10;
+        this.roundtrip=roundtrip;
+        this.total=(totaltrikets-roundtrip)*onewaytriketsprice+roundtrip*roundtripprice*discount/10;
     }
 
     public void print(){
         System.out.println("Total tickets:"+totaltrikets);
-        System.out.println("Round-trip:"+roundtip);
+        System.out.println("Round-trip:"+roundtrip);
         System.out.println("Total:"+total);
     }
-
 
 }
