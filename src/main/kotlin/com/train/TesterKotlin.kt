@@ -4,17 +4,17 @@ import java.util.*
 
 fun main(args: Array<String>) {
     val scanner= Scanner(System.`in`)
+    var totaltrikets=0
 
-    while(true){
+    while(totaltrikets!=-1){
         print("Please enter number of tickets: ")
-        var totaltrikets=scanner.nextInt()
-        if(totaltrikets==-1){
-            break
+        totaltrikets=scanner.nextInt()
+        if(totaltrikets!=-1){
+            print("How many round-trip tickets: ")
+            var roundtrip=scanner.nextInt()
+            var tricketKotlin=TricketKotlin(totaltrikets,roundtrip)
+            tricketKotlin.print()
         }
-        print("How many round-trip tickets: ")
-        var roundtrip=scanner.nextInt()
-        var tricketKotlin=TricketKotlin(totaltrikets,roundtrip)
-        tricketKotlin.print()
     }
 }
 
