@@ -11,8 +11,8 @@ fun main(args: Array<String>) {
         totalTrikets=scanner.nextInt()
         if(totalTrikets!=-1){
             print("How many round-trip tickets: ")
-            var roundtrip=scanner.nextInt()
-            var tricketKotlin=TricketKotlin(totalTrikets,roundtrip)
+            var roundTrip=scanner.nextInt()
+            var tricketKotlin=TricketKotlin(totalTrikets,roundTrip)
             tricketKotlin.print()
         }
     }
